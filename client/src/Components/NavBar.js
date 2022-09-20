@@ -2,7 +2,7 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <div>
+    <div className="inner-nav" id="inner-nav">
         <ul>
             <li>
                 <h5>
@@ -14,7 +14,7 @@ function NavBar() {
             <li>
                 <h5>
                     <a href="#projectSection">
-                    Projects 
+                    Projects
                     </a>
                 </h5>
             </li>
