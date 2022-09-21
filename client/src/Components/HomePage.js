@@ -31,9 +31,11 @@ function HomePage() {
         </div>
         <div className='about-div'>
           <h3> About me </h3>
-          <p>
-            Insert brief description about self here
-          </p>
+          <div id='about-text'>
+              <p>
+                Insert brief description about self here
+              </p>
+          </div>
         </div>
         <div className="contact-div" id="contact-div">
           <h3>

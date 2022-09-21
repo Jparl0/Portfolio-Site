@@ -35,10 +35,39 @@ header {
   padding: 100px;
 }
 
-.contact-div {
-  padding: 100px;
+.project-cards {
+  margin:auto;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(241, 110, 110, 0.911);
+  transition: 0.3s;
+  width: 450px;
+  background-color: rgba(223, 224, 224, 0.344);
+  text-align: center;
+  height:400px;
 }
+
+.proj-card-titles {
+  padding-top: 10px;
+}
+
+.proj-card-descr {
+  padding: 1px;
+}
+
 
 .about-div {
   padding: 100px;
+}
+
+#about-text {
+  margin: auto;
+  background-color: rgba(223, 224, 224, 0.344);
+  box-shadow: 0 4px 8px 0 rgba(241, 110, 110, 0.911);
+}
+
+
+.contact-div {
+  background-color: black;
+  color: white;
+  padding: 50px;
 }
