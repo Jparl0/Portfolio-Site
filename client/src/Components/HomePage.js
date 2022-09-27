@@ -1,14 +1,28 @@
-import React from 'react'
-// import NavBar from './NavBar'
+import React, {useEffect, useState} from 'react'
+import NavBar from './NavBar'
 import Projects from './Projects'
 
 function HomePage() {
+
+  const [projectsData, setProjectsData] = useState([])
+
+  useEffect(() => {
+    fetch('/projects')
+    .then(r => r.json())
+    .then(projectsFetched => {
+      setProjectsData(projectsFetched)
+  })
+  }, [])
+
   return (
     <div className="main-page" id="main-page">
+
+        <div className="outer-nav" id="outer-nav">
+            <NavBar />
+        </div >        
+        
+        {/* Header section */}
         <header className='header'>
-          {/* <div className="outer-nav" id="outer-nav">
-              <NavBar />
-          </div > */}
             <h1 id='welcome-text'>
               Welcome!
             </h1>
@@ -21,14 +35,22 @@ function HomePage() {
               </a>
             </button>
         </header>
+
+        {/* Projects section */}
         <div className="projects-div" id="projects-div">
           <h2>
               Projects
           </h2>
           <div className='projects-container'>
-            <Projects />
+            {
+              projectsData.map(mappedProj => {
+                return (<Projects key={mappedProj.id} mappedProj={mappedProj}/>)
+              }) 
+            }
           </div>
         </div>
+
+        {/* About me section */}
         <div className='about-div'>
           <h3> About me </h3>
           <div id='about-text'>
@@ -37,6 +59,8 @@ function HomePage() {
               </p>
           </div>
         </div>
+
+        {/* Contact me section */}
         <div className="contact-div" id="contact-div">
           <h3>
             Contact me here 

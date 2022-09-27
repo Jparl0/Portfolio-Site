@@ -3,27 +3,21 @@ import React from 'react'
 function NavBar() {
   return (
     <div className="inner-nav" id="inner-nav">
-        <ul>
+        <ul className='nav-list'>
             <li>
-                <h5>
-                    <a href="#aboutSection">
-                    About
-                    </a>
-                </h5>
-            </li>
-            <li>
-                <h5>
-                    <a href="#projectSection">
+                <a href="#projects-container">
                     Projects
-                    </a>
-                </h5>
+                </a>
             </li>
             <li>
-                <h5>
-                    <a href="#contactMe">
+                <a href="#aboutSection">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#contactMe">
                     Contact
-                    </a>
-                </h5>
+                </a>
             </li>
         </ul>
     </div>

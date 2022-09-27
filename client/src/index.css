@@ -18,18 +18,18 @@ header {
   color: white;
 }
 
-/* #outer-nav {
-  display: contain;
-  position: absolute;
-  top: 2.5%;
-  right: 2.5%;
+#outer-nav {
+  top: 2.5%; 
+  background-color: gray;
+  height: 50px;
 }
 
-#inner-nav {
-  background-color: gray;
-  padding: 2px;
-  padding-right: 30px;
+/* #inner-nav {
 } */
+
+.nav-list {
+  display: inline-block;
+}
 
 .projects-div {
   padding: 100px;
