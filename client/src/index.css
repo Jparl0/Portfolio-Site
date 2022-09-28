@@ -40,10 +40,10 @@ header {
   margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(241, 110, 110, 0.911);
   transition: 0.3s;
-  width: 450px;
+  width: 600px;
   background-color: rgba(223, 224, 224, 0.344);
   text-align: center;
-  height:400px;
+  height: 400px;
 }
 
 .proj-card-titles {
@@ -54,6 +54,10 @@ header {
   padding: 1px;
 }
 
+.proj-img {
+  height: 200px;
+  width: 400px;
+}
 
 .about-div {
   padding: 100px;

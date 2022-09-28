@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Projects(mappedProj) {
+function Projects({mappedProj}) {
 
   return (
         <div className='project-cards'>
@@ -10,7 +10,7 @@ function Projects(mappedProj) {
                src={`${mappedProj.link}`}
                alt={mappedProj.title}
                classname='proj-img'
-            />
+            /> 
             <button> Favorite </button>
         </div>
       )

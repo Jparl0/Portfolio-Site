@@ -6,11 +6,16 @@ function HomePage() {
 
   const [projectsData, setProjectsData] = useState([])
 
+  // console.log(projectsData)
+
   useEffect(() => {
     fetch('/projects')
     .then(r => r.json())
     .then(projectsFetched => {
+
+      // console.log(projectsFetched)
       setProjectsData(projectsFetched)
+  
   })
   }, [])
 
