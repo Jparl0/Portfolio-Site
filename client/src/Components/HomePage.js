@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import NavBar from './NavBar'
 import Projects from './Projects'
+// import Satisfactory from './images/Satisfactory.jpeg'
+// import DNDcrawl from './images/DNDcrawl.jpeg'
 
 function HomePage() {
 
@@ -56,11 +58,11 @@ function HomePage() {
         </div>
 
         {/* About me section */}
-        <div className='about-div'>
+        <div className='about-div' id='about-div'>
           <h3> About me </h3>
           <div id='about-text'>
               <p>
-                Insert brief description about self here
+                My name is Joey Parlamenti and I'm a Manhattan based developer looking for remote/hybrid work in the NYC area. 
               </p>
           </div>
         </div>

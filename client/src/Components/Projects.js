@@ -1,16 +1,19 @@
 import React from 'react'
 
+
+
 function Projects({mappedProj}) {
 
   return (
         <div className='project-cards'>
             <h5>{mappedProj.title}</h5>
             <p>{mappedProj.description}</p>
-            <img
-               src={`${mappedProj.link}`}
-               alt={mappedProj.title}
-               classname='proj-img'
-            /> 
+              <img
+                src={require(`${mappedProj.link}`)}
+                alt={mappedProj.title}
+                classname='proj-img'
+              /> 
+            
             <button> Favorite </button>
         </div>
       )

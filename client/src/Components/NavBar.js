@@ -5,17 +5,17 @@ function NavBar() {
     <div className="inner-nav" id="inner-nav">
         <ul className='nav-list'>
             <li>
-                <a href="#projects-container">
+                <a href="#projects-div">
                     Projects
                 </a>
             </li>
             <li>
-                <a href="#aboutSection">
+                <a href="#about-div">
                     About
                 </a>
             </li>
             <li>
-                <a href="#contactMe">
+                <a href="#contact-div">
                     Contact
                 </a>
             </li>
