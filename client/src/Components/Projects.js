@@ -6,12 +6,12 @@ function Projects({mappedProj}) {
 
   return (
         <div className='project-cards'>
-            <h5>{mappedProj.title}</h5>
+            <h3 className='proj-card-titles'>{mappedProj.title}</h3>
             <p>{mappedProj.description}</p>
               <img
                 src={require(`${mappedProj.link}`)}
                 alt={mappedProj.title}
-                classname='proj-img'
+                className='proj-card-images'
               /> 
             
             <button> Favorite </button>
