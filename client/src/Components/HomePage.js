@@ -63,6 +63,8 @@ function HomePage() {
           <div id='about-text'>
               <p>
                 My name is Joey Parlamenti and I'm a Manhattan based developer looking for remote/hybrid work in the NYC area. 
+                With my graduation from FlatIron School in Software Engineering in June 2022, I believe I have been given the tools to succeed in the Software Developement industry.
+                Currently I'm learning Go and trying to utilize it to build a basic Text Scraper program.
               </p>
           </div>
         </div>

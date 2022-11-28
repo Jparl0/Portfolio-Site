@@ -7,8 +7,9 @@
     "scripts": {
       "start": "npm start --prefix client",
       "build": "npm install --prefix client && npm run build --prefix client",
+      "backend": "rails db:create && rails db:migrate && rails db:seed && bundle install",
       "clean": "rm -rf public",
       "deploy": "cp -a client/build/. public/",
-      "heroku-postbuild": "npm run clean && npm run build && npm run deploy"
+      "render": "npm run clean && npm run backend && npm run build && npm run deploy"
     }
   }
