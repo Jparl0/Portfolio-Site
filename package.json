@@ -1,15 +1,20 @@
 {
     "name": "portfolio-mono-repo",
-    "description": "Project Outter package.json - Will include scripts for Heroku deployment",
+    "description": "Project Outter package.json - Will include scripts for deployment",
     "engines": {
       "node": "16.x"
     },
     "scripts": {
       "start": "npm start --prefix client",
-      "build": "npm install --prefix client && npm run build --prefix client",
-      "backend": "rails db:create && rails db:migrate && rails db:seed && bundle install",
+      
+      "backend_reseed": "rails db:drop && rails db:create && rails db:migrate && rails db:seed && rails s",
+      "backend_reset": "sudo service postgresql restart && rails db:drop && rails db:create && rails db:migrate && rails db:seed && rails s",
+      
       "clean": "rm -rf public",
+      "build": "npm install --prefix client && npm run build --prefix client",
       "deploy": "cp -a client/build/. public/",
-      "render": "npm run clean && npm run backend && npm run build && npm run deploy"
+
+      "init-backend": "rails db:drop && rails db:create && rails db:migrate && rails db:seed && bundle install && rails s",
+      "render-front": "npm run clean && npm run build && npm run deploy"
     }
   }

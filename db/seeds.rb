@@ -29,3 +29,6 @@ groceryTracker =  Project.create(
     link: "./images/Satisfactory.jpeg", 
     description: ""
 )
+
+
+puts "Seeding data successfully registered!"
