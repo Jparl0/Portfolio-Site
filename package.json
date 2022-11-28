@@ -8,7 +8,7 @@
       "start": "npm start --prefix client",
       
       "backend_reseed": "rails db:drop && rails db:create && rails db:migrate && rails db:seed && rails s",
-      "backend_reset": "sudo service postgresql restart && rails db:drop && rails db:create && rails db:migrate && rails db:seed && rails s",
+      "backend_reset": "sudo service postgresql restart && npm run backend_reseed",
       
       "clean": "rm -rf public",
       "build": "npm install --prefix client && npm run build --prefix client",

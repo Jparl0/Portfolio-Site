@@ -10,15 +10,50 @@ function HomePage() {
 
   // console.log(projectsData)
 
-  useEffect(() => {
-    fetch('/projects')
-    .then(r => r.json())
-    .then(projectsFetched => {
 
-      // console.log(projectsFetched)
-      setProjectsData(projectsFetched)
-  
-  })
+  // INVOKE THIS ONCE RUBY POSTGRESQL IS SET UP WITH RENDER.COM
+  // useEffect(() => {
+  //   fetch('/projects')
+  //   .then(r => r.json())
+  //   .then(projectsFetched => {
+  //     console.log(projectsFetched)
+  //     setProjectsData(projectsFetched)
+  // })
+  // }, [])
+
+
+  //TEMPORARY USE UNTIL RUBY SET UP FOR DEPLOYMENT
+  useEffect(() => {
+    setProjectsData([
+      {
+        id: 1,
+        title: "Satisfactory Planner", 
+        img_src: "./images/Satisfactory.jpeg", 
+        link: "https://github.com/Jparl0/Satsifactory-Planner-2.0",
+        description: "This app allows players of the video game Satisfactory to visualize the game's data based on their personal factory systems to assist in strategizing future planning."
+      }, 
+      { 
+        id: 2,
+        title: "DC2 Text Scrapper", 
+        img_src: "./images/github.png", 
+        link: "https://github.com/Jparl0",
+        description: "A simplified dungeon adventure game with various selectable classes, items and dynamic rooms selection. Select a class and find the dragon to win the game!"
+      }, 
+      {
+        id: 3,
+        title: "DC2 Data Manager", 
+        img_src: "./images/github.png",
+        link: "https://github.com/Jparl0/Dark-Cloud-2-Data-Tracker", 
+        description: ""    
+      }, 
+      {
+        id: 4,
+        title: "Grocery-Tracker", 
+        img_src: "./images/github.png",
+        link: "https://github.com/Jparl0", 
+        description: ""
+      }
+    ])
   }, [])
 
   return (
@@ -81,3 +116,33 @@ function HomePage() {
 }
 
 export default HomePage
+
+
+
+
+
+
+// dndProj = Project.create(
+//  {
+//   title: "DnD Crawl", 
+//   link: "./images/DNDcrawl.jpeg", 
+//   description: "A simplified dungeon adventure game with various selectable classes, items and dynamic rooms selection. Select a class and find the dragon to win the game!"
+// }
+// satisProj = Project.create(
+  // title: "Satisfactory Planner", 
+  // link: "./images/Satisfactory.jpeg", 
+  // description: "This app allows players of the video game Satisfactory to visualize the game’s data based on their personal factory systems to assist in strategizing future planning."
+
+//)
+// dc2DataTracker = Project.create(
+  // title: "DC2 Data Manager", 
+  // link: "./images/Satisfactory.jpeg", 
+  // description: ""
+
+// )
+
+// groceryTracker =  Project.create(
+  // title: "Grocery-Tracker", 
+  // link: "./images/Satisfactory.jpeg", 
+  // description: ""
+// )
