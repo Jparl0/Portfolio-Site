@@ -23,3 +23,9 @@ dc2DataTracker = Project.create(
     link: "./images/Satisfactory.jpeg", 
     description: ""
 )
+
+groceryTracker =  Project.create(
+    title: "Grocery-Tracker", 
+    link: "./images/Satisfactory.jpeg", 
+    description: ""
+)

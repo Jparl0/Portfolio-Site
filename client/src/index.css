@@ -59,6 +59,7 @@ li a:hover {
 }
 
 .project-cards {
+  display: inline-block;
   margin:auto;
   margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(241, 110, 110, 0.911);
@@ -70,16 +71,19 @@ li a:hover {
 }
 
 .proj-card-titles {
-  padding-top: 10px;
+  padding-top: 15px;
 }
 
 .proj-card-descr {
   padding: 1px;
 }
-/* 
-.proj-img {
 
-} */
+.proj-card-images {
+  padding: 30px;
+  align-items: center;
+  height: auto;
+  width: 500px;
+}
 
 .about-div {
   padding: 100px;
