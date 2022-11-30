@@ -37,21 +37,21 @@ function HomePage() {
         title: "DC2 Text Scrapper", 
         img_src: "./images/github.png", 
         link: "https://github.com/Jparl0",
-        description: "A simplified dungeon adventure game with various selectable classes, items and dynamic rooms selection. Select a class and find the dragon to win the game!"
+        description: "Using Go, this application uses a web"
       }, 
       {
         id: 3,
         title: "DC2 Data Manager", 
         img_src: "./images/github.png",
         link: "https://github.com/Jparl0/Dark-Cloud-2-Data-Tracker", 
-        description: ""    
+        description: "Still in development!"    
       }, 
       {
         id: 4,
         title: "Grocery-Tracker", 
         img_src: "./images/github.png",
         link: "https://github.com/Jparl0", 
-        description: ""
+        description: "Still in development!"
       }
     ])
   }, [])

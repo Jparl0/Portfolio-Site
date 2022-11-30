@@ -16,7 +16,7 @@ function Projects({mappedProj}) {
             <form action={mappedProj.link}>
               <button type='submit'>GitHub Link</button>
             </form>
-            <button> Favorite </button>
+            {/* <button> Favorite </button> */}
         </div>
       )
     }
