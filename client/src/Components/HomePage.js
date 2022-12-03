@@ -38,21 +38,21 @@ function HomePage() {
         img_src: "./images/github.png", 
         link: "https://github.com/Jparl0/Dark-Cloud-2-Web_Scraper",
         description: "Using Go, this application combs over a single page application searching for specific information. This information is then categorized and stored in a database for later use."
-      }, 
-      {
-        id: 3,
-        title: "DC2 Data Manager", 
-        img_src: "./images/github.png",
-        link: "https://github.com/Jparl0/Dark-Cloud-2-Data-Tracker", 
-        description: "Still in development!"    
-      }, 
-      {
-        id: 4,
-        title: "Grocery-Tracker", 
-        img_src: "./images/github.png",
-        link: "https://github.com/Jparl0", 
-        description: "Still in development!"
-      }
+      } 
+      // {
+      //   id: 3,
+      //   title: "DC2 Data Manager", 
+      //   img_src: "./images/github.png",
+      //   link: "https://github.com/Jparl0/Dark-Cloud-2-Data-Tracker", 
+      //   description: "Still in development!"    
+      // }, 
+      // {
+      //   id: 4,
+      //   title: "Grocery-Tracker", 
+      //   img_src: "./images/github.png",
+      //   link: "https://github.com/Jparl0", 
+      //   description: "Still in development!"
+      // }
     ])
   }, [])
 
@@ -69,7 +69,7 @@ function HomePage() {
               Welcome!
             </h1>
             <h3>
-                I'm Joey, a software engineer in Manhattan, New York.
+                I'm Joey Parlamenti, a Full-Stack Web Developer based in Manhattan, New York.
             </h3>
             <button>
               <a href="#contact-div">
@@ -77,6 +77,23 @@ function HomePage() {
               </a>
             </button>
         </header>
+
+        {/* About me section */}
+        <div className='about-div' id='about-div'>
+          <h3> About me </h3>
+          <div id='about-text'>
+              <h5>
+                Web Developer | Project Management
+              </h5>
+              <p>
+              As someone who has always had passion for games growing up, I've always been fascinated with any kind of puzzle or problem I could try to solve. 
+              From console games to computer games, I've always been obsessed with figuring out the most optimal ways of winning or playing. 
+              FlatIron was an the perfect place to transition those passions into meaningful skills. 
+              Leaving my previous career in Project Management to pursue Software Development has enabled me to create unique projects that revolve around my interests. 
+              Data Management and optimization has always been at the forefront of how I game and lead my professional development. 
+              </p>
+          </div>
+        </div>
 
         {/* Projects section */}
         <div className="projects-div" id="projects-div">
@@ -92,17 +109,20 @@ function HomePage() {
           </div>
         </div>
 
-        {/* About me section */}
-        <div className='about-div' id='about-div'>
-          <h3> About me </h3>
-          <div id='about-text'>
-              <p>
-                My name is Joey Parlamenti and I'm a Manhattan based developer looking for remote/hybrid work in the NYC area. 
-                With my graduation from FlatIron School in Software Engineering in June 2022, I believe I have been given the tools to succeed in the Software Developement industry.
-                Currently I'm learning Go and trying to utilize it to build a basic Text Scraper program.
-              </p>
+        {/* Tech Skills */}
+        {/* <div>
+          <h2>
+            Tech Skills
+          </h2>
+          <div className='techskills-container'>
+            {
+
+              techSkills.map(mappedTech => {
+                return (<TechSkills key={mappedTech.id} mappedTech={mappedTech} />)
+              })
+            }  
           </div>
-        </div>
+        </div> */}
 
         {/* Contact me section */}
         <div className="contact-div" id="contact-div">

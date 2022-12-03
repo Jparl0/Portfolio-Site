@@ -5,6 +5,16 @@ function NavBar() {
     <div className="inner-nav" id="inner-nav">
         <ul className='nav-list'>
             <li>
+                <a>
+                    LinkedIn
+                </a>
+            </li>
+            <li>
+                <a>
+                    GitHub
+                </a>
+            </li>
+            <li>
                 <a href="#projects-div">
                     Projects
                 </a>
