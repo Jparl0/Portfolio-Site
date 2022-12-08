@@ -1,23 +1,16 @@
 import React from 'react'
 
-
-
-
 function TechSkills() {
-
-
-
-
 
   return (
     <div>
 
-        TechSkills
+        {/* TechSkills
         
 
         <form action={mappedProj.link}>
               <button type='submit'>GitHub Link</button>
-            </form>
+            </form> */}
     </div>
   )
 }

@@ -80,17 +80,17 @@ function HomePage() {
 
         {/* About me section */}
         <div className='about-div' id='about-div'>
-          <h3> About me </h3>
-          <div id='about-text'>
-              <h5>
+          <h2> About me </h2>
+              <h4>
                 Web Developer | Project Management
-              </h5>
-              <p>
+              </h4>
+          <div id='about-text'>
+              <p id='about-para'>
               As someone who has always had passion for games growing up, I've always been fascinated with any kind of puzzle or problem I could try to solve. 
               From console games to computer games, I've always been obsessed with figuring out the most optimal ways of winning or playing. 
               FlatIron was an the perfect place to transition those passions into meaningful skills. 
               Leaving my previous career in Project Management to pursue Software Development has enabled me to create unique projects that revolve around my interests. 
-              Data Management and optimization has always been at the forefront of how I game and lead my professional development. 
+              Data Management and optimization have always been at the forefront of how I play games and lead my professional development, so finding a position in this field is my dream.
               </p>
           </div>
         </div>
