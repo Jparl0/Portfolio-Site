@@ -5,12 +5,12 @@ function NavBar() {
     <div className="inner-nav" id="inner-nav">
         <ul className='nav-list'>
             <li>
-                <a>
+                <a href='https://www.linkedin.com/in/joey-parlamenti/'>
                     LinkedIn
                 </a>
             </li>
             <li>
-                <a>
+                <a href='https://github.com/Jparl0'>
                     GitHub
                 </a>
             </li>
