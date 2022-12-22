@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import NavBar from './NavBar'
 import Projects from './Projects'
+import TechSkills from './TechSkills'
 // import Satisfactory from './images/Satisfactory.jpeg'
 // import DNDcrawl from './images/DNDcrawl.jpeg'
 
@@ -20,6 +21,49 @@ function HomePage() {
   //     setProjectsData(projectsFetched)
   // })
   // }, [])
+
+  const TechSkillsObj = [
+    {
+      id: 1,
+      skill_name: "HTML",
+      skill_img_src: ""
+    },
+    {
+      id: 2,
+      skill_name: "CSS",
+      skill_img_src: ""
+    },
+    {
+      id: 3,
+      skill_name: "JS",
+      skill_img_src: ""
+    },
+    {
+      id: 4,
+      skill_name: "React",
+      skill_img_src: ""
+    },
+    {
+      id: 5,
+      skill_name: "Ruby",
+      skill_img_src: ""
+    },
+    {
+      id: 6,
+      skill_name: "Rails",
+      skill_img_src: ""
+    },
+    {
+      id: 7,
+      skill_name: "GitHub",
+      skill_img_src: ""
+    },
+    {
+      id: 8,
+      skill_name: "PostgreSQL",
+      skill_img_src: ""
+    },
+]
 
 
   //TEMPORARY USE UNTIL RUBY SET UP FOR DEPLOYMENT
@@ -90,7 +134,7 @@ function HomePage() {
               From console games to computer games, I've always been obsessed with figuring out the most optimal ways of winning or playing. 
               FlatIron School's Software Engineering program was the perfect place to transition those passions into meaningful skills. 
               Leaving my previous career in Project Management to pursue Software Development has enabled me to create unique projects that revolve around my interests. 
-              Data Management and optimization have always been at the forefront of how I play games and lead my professional development, so finding a position in this field is my dream.
+              Data Management and optimization have always been at the forefront of how I play games and lead my professional development so finding a position that allows me to develop and hone these skills is key to my long-term success in the field.
               </p>
           </div>
         </div>
@@ -117,7 +161,7 @@ function HomePage() {
           <div className='techskills-container'>
             {
 
-              techSkills.map(mappedTech => {
+              TechSkillsObj.map(mappedTech => {
                 return (<TechSkills key={mappedTech.id} mappedTech={mappedTech} />)
               })
             }  
