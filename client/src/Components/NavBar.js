@@ -2,6 +2,7 @@ import React from 'react'
 
 function NavBar() {
   return (
+    // Nav Bar HTML with links to social accounts
     <div className="inner-nav" id="inner-nav">
         <ul className='nav-list'>
             <li>

@@ -9,64 +9,8 @@ function HomePage() {
 
   const [projectsData, setProjectsData] = useState([])
 
-  // console.log(projectsData)
-
-
-  // INVOKE THIS ONCE RUBY POSTGRESQL IS SET UP WITH RENDER.COM
-  // useEffect(() => {
-  //   fetch('/projects')
-  //   .then(r => r.json())
-  //   .then(projectsFetched => {
-  //     console.log(projectsFetched)
-  //     setProjectsData(projectsFetched)
-  // })
-  // }, [])
-
-  const TechSkillsObj = [
-    {
-      id: 1,
-      skill_name: "HTML",
-      skill_img_src: ""
-    },
-    {
-      id: 2,
-      skill_name: "CSS",
-      skill_img_src: ""
-    },
-    {
-      id: 3,
-      skill_name: "JS",
-      skill_img_src: ""
-    },
-    {
-      id: 4,
-      skill_name: "React",
-      skill_img_src: ""
-    },
-    {
-      id: 5,
-      skill_name: "Ruby",
-      skill_img_src: ""
-    },
-    {
-      id: 6,
-      skill_name: "Rails",
-      skill_img_src: ""
-    },
-    {
-      id: 7,
-      skill_name: "GitHub",
-      skill_img_src: ""
-    },
-    {
-      id: 8,
-      skill_name: "PostgreSQL",
-      skill_img_src: ""
-    },
-]
-
-
   //TEMPORARY USE UNTIL RUBY SET UP FOR DEPLOYMENT
+  //after page load, sets state of projectData to the array of objects below
   useEffect(() => {
     setProjectsData([
       {
@@ -103,11 +47,12 @@ function HomePage() {
   return (
     <div className="main-page" id="main-page">
 
+        {/* Nav Bar component */}
         <div className="outer-nav" id="outer-nav">
             <NavBar />
         </div >        
         
-        {/* Header section */}
+        {/* Header Section */}
         <header className='header'>
             <h1 id='welcome-text'>
               Welcome!
@@ -122,7 +67,7 @@ function HomePage() {
             </button>
         </header>
 
-        {/* About me section */}
+        {/* About-me section */}
         <div className='about-div' id='about-div'>
           <h2> About me </h2>
               <h4>
@@ -139,13 +84,14 @@ function HomePage() {
           </div>
         </div>
 
-        {/* Projects section */}
+        {/* Projects section with Projects Component */}
         <div className="projects-div" id="projects-div">
           <h2>
               Projects
           </h2>
           <div className='projects-container'>
             {
+              // Maps over the Array of Objects set above to dynamically render each Project with corresponding information
               projectsData.map(mappedProj => {
                 return (<Projects key={mappedProj.id} mappedProj={mappedProj}/>)
               }) 
@@ -153,22 +99,17 @@ function HomePage() {
           </div>
         </div>
 
-        {/* Tech Skills */}
+        {/* Tech Skills Component*/}
         {/* <div>
           <h2>
             Tech Skills
           </h2>
           <div className='techskills-container'>
-            {
-
-              TechSkillsObj.map(mappedTech => {
-                return (<TechSkills key={mappedTech.id} mappedTech={mappedTech} />)
-              })
-            }  
+            <TechSkills />
           </div>
         </div> */}
 
-        {/* Contact me section */}
+        {/* Contact-me section */}
         <div className="contact-div" id="contact-div">
           <h3>
             Contact me here 
@@ -180,33 +121,3 @@ function HomePage() {
 }
 
 export default HomePage
-
-
-
-
-
-
-// dndProj = Project.create(
-//  {
-//   title: "DnD Crawl", 
-//   link: "./images/DNDcrawl.jpeg", 
-//   description: "A simplified dungeon adventure game with various selectable classes, items and dynamic rooms selection. Select a class and find the dragon to win the game!"
-// }
-// satisProj = Project.create(
-  // title: "Satisfactory Planner", 
-  // link: "./images/Satisfactory.jpeg", 
-  // description: "This app allows players of the video game Satisfactory to visualize the game’s data based on their personal factory systems to assist in strategizing future planning."
-
-//)
-// dc2DataTracker = Project.create(
-  // title: "DC2 Data Manager", 
-  // link: "./images/Satisfactory.jpeg", 
-  // description: ""
-
-// )
-
-// groceryTracker =  Project.create(
-  // title: "Grocery-Tracker", 
-  // link: "./images/Satisfactory.jpeg", 
-  // description: ""
-// )

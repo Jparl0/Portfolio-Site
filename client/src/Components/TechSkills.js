@@ -10,6 +10,7 @@ import { ReactComponent as RubyLogo } from './skill_images/ruby-plain-wordmark.s
 
 function TechSkills() {
 
+  //SVG components rendered below
   return (
     <div>
       <div>
