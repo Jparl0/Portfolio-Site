@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import NavBar from './NavBar'
 import Projects from './Projects'
 import TechSkills from './TechSkills'
+import HeaderPic from './images/header_pic.png'
 // import Satisfactory from './images/Satisfactory.jpeg'
 // import DNDcrawl from './images/DNDcrawl.jpeg'
 
@@ -47,13 +48,13 @@ function HomePage() {
   return (
     <div className="main-page" id="main-page">
 
-        {/* Nav Bar component */}
-        <div className="outer-nav" id="outer-nav">
-            <NavBar />
-        </div >        
-        
         {/* Header Section */}
         <header className='header'>
+          {/* Nav Bar component */}
+          <div className="outer-nav" id="outer-nav">
+              <NavBar />
+          </div >        
+          <div className='header-text'>
             <h1 id='welcome-text'>
               Welcome!
             </h1>
@@ -65,6 +66,10 @@ function HomePage() {
                 Contact Me
               </a>
             </button>
+          </div>
+          <div className='img-header'>
+            <img src={HeaderPic}/>
+          </div>
         </header>
 
         {/* About-me section */}
