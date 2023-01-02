@@ -12,7 +12,7 @@ function TechSkills() {
 
   //SVG components rendered below
   return (
-    <div>
+    <div className='skill-logos'>
       <div>
         <CssLogo />
       </div>

@@ -1,10 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import NavBar from './NavBar'
 import Projects from './Projects'
-import TechSkills from './TechSkills'
+// import TechSkills from './TechSkills'
 import HeaderPic from './images/header_pic.png'
-// import Satisfactory from './images/Satisfactory.jpeg'
-// import DNDcrawl from './images/DNDcrawl.jpeg'
 
 function HomePage() {
 
