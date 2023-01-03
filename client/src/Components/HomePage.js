@@ -48,10 +48,13 @@ function HomePage() {
 
         {/* Header Section */}
         <header className='header'>
+
           {/* Nav Bar component */}
           <div className="outer-nav" id="outer-nav">
               <NavBar />
           </div >        
+
+
           <div className='header-text'>
             <h1 id='welcome-text'>
               Welcome!
@@ -65,6 +68,8 @@ function HomePage() {
               </a>
             </button>
           </div>
+
+
           <div className='img-header'>
             <img src={HeaderPic}/>
           </div>
@@ -76,8 +81,8 @@ function HomePage() {
               <h4>
                 Web Developer | Project Management
               </h4>
-          <div id='about-text'>
-              <p id='about-para'>
+          <div id='about-para'>
+              <p id='about-text'>
               As someone who has always had a passion for games growing up, I've developed a fascination with any kind of puzzle or problem I could try to solve. 
               From console games to computer games, my obsession with figuring out the most optimal ways of winning or playing has permeated any and all types of interactive entertainment I engage with. 
               FlatIron School's Software Engineering program was the perfect place to transition those strong desires to find solutions and optimize processes into meaningful skills. 
