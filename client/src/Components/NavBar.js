@@ -5,28 +5,28 @@ function NavBar() {
     // Nav Bar HTML with links to social accounts
     <div className="inner-nav" id="inner-nav">
         <ul className='nav-list'>
-            <li>
-                <a href='https://www.linkedin.com/in/joey-parlamenti/'>
+            <li className='nav-list-li'>
+                <a className='nav-list-links' href='https://www.linkedin.com/in/joey-parlamenti/'>
                     LinkedIn
                 </a>
             </li>
-            <li>
-                <a href='https://github.com/Jparl0'>
+            <li className='nav-list-li'>
+                <a className='nav-list-links' href='https://github.com/Jparl0'>
                     GitHub
                 </a>
             </li>
-            <li>
-                <a href="#projects-div">
+            <li className='nav-list-li'>
+                <a className='nav-list-links' href="#projects-div">
                     Projects
                 </a>
             </li>
-            <li>
-                <a href="#about-div">
+            <li className='nav-list-li'>
+                <a className='nav-list-links' href="#about-div">
                     About
                 </a>
             </li>
-            <li>
-                <a href="#contact-div">
+            <li className='nav-list-li'>
+                <a className='nav-list-links' href="#contact-div">
                     Contact
                 </a>
             </li>

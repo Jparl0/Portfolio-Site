@@ -32,15 +32,6 @@ header {
   width: auto;
 }
 
-/* .skill-logos {
- 
-  
-} */
-
-.techskills-container {
-  display: auto;
-}
-
 #outer-nav {
   margin: auto;
   padding-bottom: 5px;
@@ -56,6 +47,24 @@ header {
   list-style-type: none;
   margin: auto;
   padding: auto;
+  display: block;
+  float: right;
+}
+
+.nav-list-li {
+  display: block;
+  float: right;
+  padding-top: 15px;
+}
+
+.nav-list-links {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.nav-list-links:hover {
+  background-color: rgb(243, 160, 160);
 }
 
 img {
@@ -64,20 +73,17 @@ img {
 }
 
 li {
-  display: block;
-  float: right;
-  padding-top: 15px;
+  
 }
 
 li a {
   text-align: center;
-  padding: 20px;
   background-color: rgb(255, 255, 255);
 }
 
-li a:hover {
-  background-color: rgb(243, 160, 160);
-}
+/* li a:hover {
+ 
+} */
 
 .projects-div {
   padding: 75px;
@@ -126,9 +132,34 @@ li a:hover {
   box-shadow: 0 4px 8px 0 rgba(241, 110, 110, 0.911);
 }
 
+.skills-section {
+  padding: 75px;
+} 
 
+.outer-skills-container {
+  margin: auto;
+  background-color: rgba(223, 224, 224, 0.344);
+  box-shadow: 0 4px 8px 0 rgba(241, 110, 110, 0.911);
+  padding: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: auto;
+  width: 1000px;
+}
+
+.skill-logos-li {
+  list-style-type: none;
+  padding: 10px;
+  margin: auto;
+  padding: auto;
+  display: inline;
+}
 .contact-div {
   background-color: black;
   color: white;
   padding: 50px;
+}
+
+svg {
+  width: 20%;
 }

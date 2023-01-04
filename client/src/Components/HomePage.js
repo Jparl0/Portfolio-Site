@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import NavBar from './NavBar'
 import Projects from './Projects'
-// import TechSkills from './TechSkills'
+import TechSkills from './TechSkills'
 import HeaderPic from './images/header_pic.png'
 
 function HomePage() {
@@ -69,7 +69,7 @@ function HomePage() {
             </button>
           </div>
 
-
+          {/* Header Img */}
           <div className='img-header'>
             <img src={HeaderPic}/>
           </div>
@@ -108,14 +108,14 @@ function HomePage() {
         </div>
 
         {/* Tech Skills Component*/}
-        {/* <div>
+        <div className='skills-section'>
           <h2>
             Tech Skills
           </h2>
-          <div className='techskills-container'>
+          <div className='outer-skills-container'>
             <TechSkills />
           </div>
-        </div> */}
+        </div>
 
         {/* Contact-me section */}
         <div className="contact-div" id="contact-div">

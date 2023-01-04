@@ -12,35 +12,36 @@ function TechSkills() {
 
   //SVG components rendered below
   return (
-    <div className='skill-logos'>
-      <div>
-        <CssLogo />
-      </div>
-      <div>
-        <Html5Logo />
-      </div>
-      <div>
-        <JsLogo />
-      </div>
-      <div>
-        <ReactLogo />
-      </div>
-      <div>
-        <GitLogo />
-      </div>
-      <div>
-        <PostLogo />
-      </div>
-      <div>
-        <RubyLogo />
-      </div>
-      <div>
-        <RailsLogo />
-      </div>
+    <div className='skill-container'>
+      <ul className='skill-logos'>
+        <li className='skill-logos-li'>
+          <CssLogo />
+        </li>
+        <li className='skill-logos-li'>
+          <Html5Logo />
+        </li>
+        <li className='skill-logos-li'>
+          <JsLogo />
+        </li>
+        <li className='skill-logos-li'>
+          <ReactLogo />
+        </li>
+        <li className='skill-logos-li'>
+          <GitLogo />
+        </li>
+        <li className='skill-logos-li'>
+          <PostLogo />
+        </li>
+        <li className='skill-logos-li'>
+          <RubyLogo />
+        </li>
+        <li className='skill-logos-li'>
+          <RailsLogo />
+        </li>
         {/* <form action={mappedProj.link}>
               <button type='submit'>GitHub Link</button>
         </form> */}
-
+      </ul>
     </div>
   )
 }
