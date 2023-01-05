@@ -109,7 +109,7 @@ function HomePage() {
 
         {/* Tech Skills Component*/}
         <div className='skills-section'>
-          <h2>
+          <h2 id='tech-skill-title'>
             Tech Skills
           </h2>
           <div className='outer-skills-container'>

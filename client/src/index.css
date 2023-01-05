@@ -136,6 +136,10 @@ li a {
   padding: 75px;
 } 
 
+#tech-skill-title {
+  padding-left: 140px;
+}
+
 .outer-skills-container {
   margin: auto;
   background-color: rgba(223, 224, 224, 0.344);
