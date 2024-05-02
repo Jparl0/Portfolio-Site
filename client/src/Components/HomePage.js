@@ -71,7 +71,7 @@ function HomePage() {
 
           {/* Header Img */}
           <div className='img-header'>
-            <img src={HeaderPic}/>
+            <img src={HeaderPic} alt='image header'/>
           </div>
         </header>
 
